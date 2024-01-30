@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+Categorias
+{% endblock %}
+
+{% block content %}
+<div class="py-20 text-red-600">
+    <h1>Essa é o detalhe de {{ object.titulo }}</h1>
+    <p>{{object }}</p>
+    <p>{{object.descricao }}</p>
+    <img src="{{ object.thumb.url}}" alt="">
+</div>
+
+
+{% endblock %}

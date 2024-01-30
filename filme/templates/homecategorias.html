@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+Categorias
+{% endblock %}
+
+{% block content %}
+    <div class="z-10 h-full py-32 md:py-0 text-red-600 text-center flex items-center flex-col">
+        <div class="py-20">
+            <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
+                 STUDYPLUS
+            </h1>
+        </div>
+    </div>
+    <div class="flex container mx-auto">
+        <div class="py-0 w-1/2">
+        <a href="http://127.0.0.1:8000/programacao">
+            <img src="{% static 'imagens/logica.png' %}" alt="Imagem 1" class="w-5/12 rounded-md h-full object-cover">
+        </a>
+        </div>
+
+        <div class="py-0 w-1/2 ">
+            <a href="http://127.0.0.1:8000/programacao">
+                <img src="{% static 'imagens/matematica.jpeg' %}" alt="Imagem 2" class="w-6/12 rounded-md h-full object-cover ">
+
+            </a>
+
+        </div>
+
+        <div class="py-0 w-1/2 ">
+            <a href="http://127.0.0.1:8000/programacao">
+                <img src="{% static 'imagens/software.png' %}" alt="Imagem 3" class="w-4/12 rounded-md h-full object-cover ">
+
+            </a>
+
+        </div>
+        <div class="py-0 w-1/2">
+            <a href="http://127.0.0.1:8000/programacao">
+                <img src="{% static 'imagens/estruturadados.png' %}" alt="Imagem 4" class="w-5/12 rounded-md h-full object-cover ">
+
+            </a>
+
+        </div>
+
+
+
+    </div>
+
+{% endblock %}

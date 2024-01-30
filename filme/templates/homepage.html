@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+Homepage EducaPlus
+{% endblock %}
+
+{% block content %}
+    <header class="min-h-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat"  style="background-image: url('{% static 'imagens/fundo13.jpg'%}');">
+        <div class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col">
+
+            <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
+                 Venha estudar conosco
+            </h1>
+            <h3 class="text-xl md:text-xl py-5">
+                Assista onde quiser.
+            </h3>
+            <h4 class="text-sm md:text-lg pb-3">
+                Quer começar? Coloque seu e-mail abaixo para acessar.
+            </h4>
+
+            <div class="w-full flex justify-center">
+                <div class="flex justify-center items-center w-11/12 md:w-12/12">
+                    <form method="post" class="w-12/12 justify-center">
+                        <div class="flex flex-grow items-stretch">
+                            <input>
+                        <button class="bg-green-600 font-medium md:font-normal flex justify-center items-center py-2 px-3 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl" type="submit">
+                            <span>
+                                Acessar
+                            </span>
+                            <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
+                        </button>
+                        </div>
+                    </form>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10 ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Para estudantes.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Conteúdos esclusivos para todos os estudantes que amam programação e T.I, voltado para alunos da Faculdade de Tecnologia Santana de Parnaíba.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'imagens/alunos.jpg'%}" class="w-5/12" alt="">
+        </div>
+    </section>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class='md:w-1/2 flex justify-center items-center '>
+            <img src="{% static  'imagens/professor.jpg'%}" class="w-8/12" alt="">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Para professores.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                 Para todos aqueles professores que queiram ensinar de uma forma diferente e usando a tecnologia.
+            </h5>
+        </div>
+
+    </section>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Venha para nossa Faculdade
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Faculdade que explora a tecnologia em busca de passar conhecimentos à aqueles amantes desse mundo fatástico.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static  'imagens/campus.jpg'%}" class="w-8/12" alt="">
+        </div>
+    </section>
+    <footer class=" px-5 py-10 ">
+        <ul class="flex justify-between items-center">
+
+            <li>&copy; 2024</li>
+            <li> Feito em Python(Django)</li>
+            <li>Fatec Santana de Parnaíba</li>
+        </ul>
+    </footer>
+
+{% endblock %}
